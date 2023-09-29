@@ -618,8 +618,56 @@ p .footer-text {
 
 
 
-.form-label {
-  display: flex;
-  flex-direction: column;
-  transition: color 150ms ease-in-out;
+
+
+.modal-form {
+  width: 408px;
+  padding: 24px;
+}
+
+input:not(type=checkbox) {
+width: 360px;
+height: 40px;
+
+}
+
+.form-input {
+  width: 360px;
+  height: 40px;
+  }
+
+input {
+  display: block;
+}
+
+textarea {
+display: block;
+width: 360px;
+}
+
+.form-button {
+  display: block;
+
+}
+
+.modal-line-input {
+  position: relative;
+}
+
+.icon-modal {
+  position: absolute;
+  left: 16px;
+	top: 50%;
+  
+}
+
+.icon-modal-close {
+  fill: #fff;
+  
+}
+
+.modal-button-close {
+  border: none;
+  background-color: var(--color-white);
+  
 }
