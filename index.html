@@ -68,7 +68,6 @@
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
 
           <button type="button" class="order-button">Order Service</button>
-          
         </div>
       </section>
 
@@ -589,107 +588,126 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscribe">
+          <p class="subscribe-title">Subscribe</p>
+
+          <div class="footer-form">
+            <!-- <label class="subscribe-label">
+           Email -->
+            <input
+              class="form-input-footer"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+
+            <!-- </label> -->
+
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <svg class="icon-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-frame"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
 
     <!-- Modal window -->
-                   
-          <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button class="modal-button-close" type="button" data-modal-close>
-              <svg class="icon-modal-close" width="24" height="24">
-                <use href="./images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
 
-            <p class="modal-name">
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-button-close" type="button" data-modal-close>
+          <svg class="icon-modal-close" width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <form class="modal-form" name="contact-form" autocomplete="off">
+          <p class="modal-name">
             Leave your contacts and we will call you back
-          </p> 
-            
-            
-            <form class="modal-form" name="contact-form" autocomplete="off">
-              <div class="modal-line-input">
-              <label class="form-label">
-                <!-- <span class="modal-form-label"> -->
-                Name
+          </p>
+
+          <div class="modal-line-input">
+            <label class="form-label">
+              <!-- <span class="modal-form-label"> -->
+              Name
               <!-- </span> -->
-                <input
-                  class="form-input"
-                  type="text"
-                  name="username"
-                  autofocus
-                />
-                <svg class="icon-modal" width="18" height="18">
-                  <use href="./images/icons.svg#icon-person"></use>
-                </svg>
-
-              </label>
-            </div>
-
-            <div class="modal-line-input">
-              <label class="form-label">
-                <!-- <span class="modal-form-label"> -->
-                  Phone
-                <!-- </span> -->
-                <input class="form-input" type="tel" name="telephone" />
-                <svg class="icon-modal" width="18" height="24">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </label>
-            </div>
-
-            <div class="modal-line-input">  
-            <label class="form-label">
-                <!-- <span class="modal-form-label"> -->
-                  Email
-                <!-- </span> -->
-                <input class="form-input" type="email" name="email" />
-                <svg class="icon-modal" width="18" height="24">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-
-              </label>
-            </div>
-
-            <div class="modal-line-input">  
-            <label class="form-label">
-                <!-- <span class="modal-form-label"> -->
-                  Comment
-                <!-- </span> -->
-                <textarea
-                  class="form-input-text"
-                  name="comment"
-                  rows="5"
-                  placeholder="Text input"
-                >
-                </textarea>
-              </label>
-              </div>
-
-              <div class="modal-line-input">
-              <label class="form-label">
-                <span class="modal-form-label">I accept the terms and conditions of the Privacy Policy</span>
-                <input
-                  type="checkbox"
-                  name="terms"
-                  value="I accept the terms and conditions of the Privacy Policy"
-                />
-                
-              </label>
-              </div>
-
-              <div class="modal-button-container">
-              <button class="form-button" type="submit">Send</button>
-              </div>
-
-            </form>
+              <input class="form-input" type="text" name="username" autofocus />
+              <svg class="icon-modal" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </label>
           </div>
-        </div>
 
-        <!-- <script src="./js/modal.js"></script> -->
-           
-    
+          <div class="modal-line-input">
+            <label class="form-label">
+              <!-- <span class="modal-form-label"> -->
+              Phone
+              <!-- </span> -->
+              <input class="form-input" type="tel" name="telephone" />
+              <svg class="icon-modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </label>
+          </div>
 
+          <div class="modal-line-input">
+            <label class="form-label">
+              <!-- <span class="modal-form-label"> -->
+              Email
+              <!-- </span> -->
+              <input class="form-input" type="email" name="email" />
+              <svg class="icon-modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </label>
+          </div>
 
+          <div class="modal-line-input">
+            <label class="form-label">
+              <!-- <span class="modal-form-label"> -->
+              Comment
+              <!-- </span> -->
+              <textarea
+                class="form-input-text"
+                name="comment"
+                rows="5"
+                placeholder="Text input"
+              >
+              </textarea>
+            </label>
+          </div>
+
+          <div class="modal-line-input">
+            <label class="form-label">
+              <svg class="icon-modal-checkbox" width="16" height="16">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+
+              <span class="modal-form-label"
+                >I accept the terms and conditions of the
+                <a class="modal-form-terms-pp-link" href=""> Privacy Policy</a>
+              </span>
+
+              <input
+                class="checkbox-visually-hidden"
+                type="checkbox"
+                name="terms"
+                value="I accept the terms and conditions of the Privacy Policy"
+              />
+            </label>
+          </div>
+
+          <div class="modal-button-container">
+            <button class="form-button" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
