@@ -684,38 +684,36 @@
              </label>
 
 
-             <textarea
-                class="form-input-text"
-                id="user-comment"
-                name="user-comment"
-                rows="7"
-                placeholder="Text input"
-              >
-              </textarea>
-             
+             <textarea id="user-comment" class="modal-form-textarea" name="user-comment" rows="7" placeholder="Text input"></textarea>
             
           </div>
 
-          <div class="modal-line-input">
-            <label class="form-label" for="user-privacy">
-              
-              <svg class="icon-modal-checkbox" width="16" height="16">
-                <use href="./images/icons.svg#icon-checkbox"></use>
-              </svg>
+          <div class="modal-line-input-terms">
 
+            <input
+            id="user-privacy"
+              class="visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+            />
+
+            <label class="form-label-terms" for="user-privacy">
+              
+              
               <span class="modal-form-label"
-                >I accept the terms and conditions of the
-                <a class="modal-form-terms-pp-link" href=""> Privacy Policy</a>
+                >
+                <svg class="icon-modal-checkbox" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
               </span>
+              
+                I accept the terms and conditions of the
+                <a class="modal-form-terms-pp-link" href=""> Privacy Policy</a>
+              
             </label>
 
-              <input
-              id="user-privacy"
-                class="checkbox-visually-hidden"
-                type="checkbox"
-                name="terms"
-                value="I accept the terms and conditions of the Privacy Policy"
-              />
+             
             
           </div>
 
