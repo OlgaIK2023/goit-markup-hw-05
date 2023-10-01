@@ -696,7 +696,7 @@ textarea {
   margin-bottom: 24px;
 }
 
-.modal-line-input .comment {
+.modal-line-input-comment {
   position: relative;
   display: block;
   margin-bottom: 16px;
@@ -795,8 +795,7 @@ textarea {
 
 .form-label-terms {
   font-size: 12px;
-  color: var(--color-lightslate)
-  
+  color: var(--color-lightslate);
   line-height: 1.17;
   letter-spacing: 0.04em;
 
@@ -809,8 +808,7 @@ textarea {
   height: 16px;
   1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   display: inline-flex;
   align-items: center;
