@@ -649,7 +649,7 @@ textarea {
   display: block;
   padding: 16px 32px;
   border-radius: 4px;
-  background: var(--IRIS, #4d5ae5);
+  
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: var(--color-iris);
   border: none;
@@ -678,6 +678,7 @@ textarea {
 .modal-line-input {
   position: relative;
   display: block;
+  margin-bottom: 8px;
 }
 
 .icon-modal {
@@ -706,8 +707,16 @@ textarea {
   background-color: var(--color-cornflower);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(0, 0, 0, 0.10);
+  cursor: pointer;
 
 }
+
+
+.icon-modal-close {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 
 .modal-button-close:hover,
 .modal-button-close:focus {
@@ -725,7 +734,7 @@ textarea {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.32px;
-  margin-top: 24px;
+  
   margin-bottom: 16px;
 }
 
@@ -841,7 +850,7 @@ background: var(--color-navyblue);
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
 
@@ -853,7 +862,7 @@ background: var(--color-navyblue);
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 24px 24px 0 24px;
+  padding: 72px 24px 24px 24px;
 }
 
 .backdrop-is-open {

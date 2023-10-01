@@ -625,64 +625,83 @@
           </svg>
         </button>
 
+        <p class="modal-name">
+          Leave your contacts and we will call you back
+        </p>
+
         <form class="modal-form" name="contact-form" autocomplete="off">
-          <p class="modal-name">
-            Leave your contacts and we will call you back
-          </p>
+          
 
           <div class="modal-line-input">
-            <label class="form-label">
+            <label class="form-label" for="user-name">
               <!-- <span class="modal-form-label"> -->
               Name
               <!-- </span> -->
-              <input class="form-input" type="text" name="username" autofocus />
+            </label>
+
+              <div class="modal-container-input">
+              <input class="form-input" id="user-name" type="text" name="username" autofocus />
               <svg class="icon-modal" width="18" height="18">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
-            </label>
+              </div>
+            
           </div>
 
           <div class="modal-line-input">
-            <label class="form-label">
+            <label class="form-label" for="phone-number">
               <!-- <span class="modal-form-label"> -->
               Phone
               <!-- </span> -->
-              <input class="form-input" type="tel" name="telephone" />
+            </label>
+
+            <div class="modal-container-input">
+              <input class="form-input" id="phone-number" type="tel" name="telephone" />
               <svg class="icon-modal" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
-            </label>
+            </div>
           </div>
 
           <div class="modal-line-input">
-            <label class="form-label">
-              <!-- <span class="modal-form-label"> -->
+            <label class="form-label" for="email">
               Email
-              <!-- </span> -->
-              <input class="form-input" type="email" name="email" />
+            </label>
+
+
+              <div class="modal-container-input">
+              <input class="form-input" id="email" type="email" name="email" />
               <svg class="icon-modal" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
-            </label>
+              </div>
+            
           </div>
 
           <div class="modal-line-input">
-            <label class="form-label">
+            <label class="form-label" for="user-comment">
               <!-- <span class="modal-form-label"> -->
               Comment
               <!-- </span> -->
+            </label>
+
+
+              <div class="modal-container-input">
               <textarea
                 class="form-input-text"
                 name="comment"
-                rows="5"
+                name="user-comment"
+                rows="7"
                 placeholder="Text input"
               >
               </textarea>
-            </label>
+              </div>
+            
           </div>
 
           <div class="modal-line-input">
-            <label class="form-label">
+            <label class="form-label" for="user-privacy">
+              
               <svg class="icon-modal-checkbox" width="16" height="16">
                 <use href="./images/icons.svg#icon-checkbox"></use>
               </svg>
@@ -691,14 +710,16 @@
                 >I accept the terms and conditions of the
                 <a class="modal-form-terms-pp-link" href=""> Privacy Policy</a>
               </span>
+            </label>
 
               <input
+              id="user-privacy"
                 class="checkbox-visually-hidden"
                 type="checkbox"
                 name="terms"
                 value="I accept the terms and conditions of the Privacy Policy"
               />
-            </label>
+            
           </div>
 
           <div class="modal-button-container">
