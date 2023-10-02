@@ -873,6 +873,7 @@ textarea {
   border: 1px solid var(--color-white);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .modal-form-textarea {
